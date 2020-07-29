@@ -36,7 +36,36 @@ form > * {
 #form-post-submit:hover {
     background-color: #002349;
 }
+header{
+    min-height: 350px;
+    color: white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+header > * {
+    z-index:10;
+}
+
+header::before{
+    content:"";
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
 
 
+
+ .submitPost-page header{
+    background-image: url(../assets/banner.jpeg);
+}
 
 
