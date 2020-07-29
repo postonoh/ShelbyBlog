@@ -9,13 +9,11 @@ body {
 
 header{
     min-height: 350px;
-    background-color: blue;
     color: white;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(../assets/banner.jpeg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -33,6 +31,10 @@ header::before{
     left:0;
     right:0;
     background-color: rgba(0, 0, 0, 0.7);
+}
+
+.home-page header{
+    background-image: url(../assets/banner.jpeg);
 }
 
 .profile-image{
