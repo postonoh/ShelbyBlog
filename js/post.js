@@ -30,8 +30,11 @@ const getPost = () => {
 }
 
 const buildPost = (data) => { 
-document.getElementById("individual-post-title").innerHTML = data.title;
+const postImage = `${API_BASE_URL}${data.post_image}`;
 const postDate = new Date(parseInt(data.added_date)).toDateString();
+
+document.querySelector("header").style.backgroundImage = `url(${postImage})`;
+document.getElementById("individual-post-title").innerHTML = data.title;
 document.getElementById("individual-post-date").innerHTML = postDate;
 document.getElementById("individual-post-content").innerHTML = data.content;
 
